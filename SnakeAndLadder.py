@@ -17,7 +17,8 @@ while position < 100:
     print(play_Condition)
     if play_Condition == 0:  # Condition is True for NO Play (The Player will be remain at the Same Point)
         pass
-    elif play_Condition == 1:  # Condition is True for Ladder
+    elif play_Condition == 1 and position + die_value <= 100:  # Condition is True for Ladder
         position += die_value
-    elif play_Condition == 2:  #Condition is True for Snake
+    elif play_Condition == 2:  # Condition is True for Snake
         position -= die_value
+    print(position)
